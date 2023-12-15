@@ -1,4 +1,5 @@
 import time
+import pytest
 
 # 'i' stands for the number of times we want to replicate the experience
 # 'j' stands for the number of times we want to repeat the funtion
