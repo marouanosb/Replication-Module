@@ -5,6 +5,11 @@ import time
 # 'func' stands for the function we want to replicate
 # 'args' is the list of arguments the are passed when calling the function call
 def replicate(i, j, func, args):
-    results = []
+    outerResults = []
+    for x in range(i):
+        innerResults = []
+        for y in range(j):
+            innerResults.append(func(args))
+        outerResults.append(innerResults)
 
-    return resuls
+    return outerResults
